@@ -7,7 +7,7 @@ const app = new App({
     processBeforeResponse: true
 });
 
-app.message('help', async ({message, say}) => {
+app.message('farmas', async ({message, say}) => {
     await say(`Hey there <@${message.channel}>!`)
 });
 
