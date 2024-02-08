@@ -11,6 +11,12 @@ app.message('farmas', async ({message, say}) => {
     await say(`Hey there <@${message.channel}>!`)
 });
 
+app.command('/farmas', async ({command, ack, respond}) => {
+    await ack();
+
+    await respond(`${command.text}`)
+});
+
 (async () => {
     await app.start(process.env.PORT || 3000)
 })();
