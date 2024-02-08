@@ -25,7 +25,7 @@ import express from 'express'
 
 const app = express()
 app.post("/", (req: express.Request, res: express.Response) => {
-    console.log(req)
+    console.log(req.body)
     res.send("ok")
 });
 app.listen(3000)
